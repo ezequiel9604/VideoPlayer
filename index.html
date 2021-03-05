@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="css/styles.css"/>
+	<script src="js/scripts.js"></script>
+</head>
+<body>
+
+	<!-- video player main container -->
+<div class="video-player-container">
+	
+	<!-- video player cover image -->
+	<!-- this desapear when user clicks on it -->
+	<div class="video-player-cover">
+		<i class="material-icons" id="btn-cover-play">play_arrow</i>
+	</div>
+
+	<!-- video tag which contains the video -->
+	<video id="video-player">
+		<source src="videos/eminem-not-afraid.mp4" type="video/mp4"/>
+		your browser do not support video tag.
+	</video>
+
+	<!-- video player control container -->
+	<div id="controls">
+		
+		<div >	<!-- play button -->
+			<i class="material-icons" id="btn-play">play_arrow</i>
+		</div>
+		<div >	<!-- volume button -->
+			<i class="material-icons" id="btn-volume">volume_up</i>
+			<div id="volume-bar">	<!-- volume progress bar -->
+				<div id="volume-progress-bar"></div>
+			</div>
+
+		</div>
+		<div >
+			<div id="time-bar"> <!-- time progress bar -->
+				<div id="time-progress-bar"></div>
+			</div>
+		</div>
+
+	</div>
+
+</div>	
+	
+	<p>this text was added from github</p>
+
+
+</body>
+</html>

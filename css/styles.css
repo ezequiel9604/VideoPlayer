@@ -1,0 +1,132 @@
+
+	
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-size: 1em;
+}
+
+div.video-player-container{
+	width: 400px;
+	height: 300px;
+	margin: 20px auto;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+}
+
+div.video-player-cover{
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 400px;
+	height: 300px;
+	z-index: 1;
+}
+
+div.video-player-cover > i{
+	border: 3px solid #f1f1f1;
+	font-size: 80px;
+	color: #f1f1f1;
+	border-radius: 50px;
+	position: absolute;
+	top: 100px;
+	left: 150px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+
+
+video#video-player{
+	background-color: #ccc;
+	width: inherit;
+	height: inherit;
+	z-index: 1;
+	object-fit: cover;
+}
+
+div#controls{
+	background-color: rgb(245, 245, 245);
+	width: inherit;
+	height: 40px;
+	position: absolute;
+	bottom: -40px;/* this will change */
+	overflow: hidden;
+	transition: all 0.5s;
+}
+
+div#controls > div{
+	float: left;
+}
+
+div#controls > div:nth-child(1){
+	width: 40px;
+	height: inherit;
+	text-align: center;
+}
+
+div#controls > div:nth-child(1) i{
+	font-size: 30px;
+	line-height: 39px;
+	color: #4d4d4d;
+	cursor: pointer;
+}
+
+div#controls > div:nth-child(2){
+	width: 85px;
+	height: inherit;
+	overflow: hidden;
+}
+
+div#controls > div:nth-child(2) i{
+	font-size: 25px;
+	line-height: 40px;
+	color: #4d4d4d;
+	float: left;
+	cursor: pointer;
+	margin-left: 2px;
+}
+
+div#volume-bar{
+	width: 40px;
+	height: 10px;
+	background-color: #ccc;
+	margin-top: 15px;
+	margin-right: 8px;
+	float: right;
+	cursor: pointer;
+}
+
+div#volume-progress-bar{
+	width: inherit;
+	height: inherit;
+	background-color: #4d4d4d;
+}
+
+
+div#controls > div:nth-child(3) {
+	width: 274px;
+	height: 40px;
+}
+
+div#time-bar{
+	width: 250px;
+	height: 10px;
+	margin: 15px auto;
+	background-color: #ccc;
+	cursor: pointer;
+}
+
+div#time-progress-bar{
+	width: inherit ;
+	height: inherit;
+	background-color: #4d4d4d;
+}
+
+p{
+	text-align: center;
+	margin-top: 40px;
+}
